@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="setterBasedDI" class="exercises.SetterBasedDI">
+        <property name="beanOne" ref="anotherBean"/>
+        <property name="beanTwo" ref="yetAnotherBean"/>
+        <property name="integerProperty" value="100"/>
+    </bean>
+    <bean id="anotherBean" class="exercises.AnotherBean"/>
+    <bean id="yetAnotherBean" class="exercises.YetAnotherBean"/>
+
+    <bean id="constructorBasedDI" class="exercises.ConstructorBasedDI">
+        <constructor-arg ref="anotherBean"/>
+        <constructor-arg ref="yetAnotherBean"/>
+        <constructor-arg type="int" value="1"/>
+    </bean>
+</beans>

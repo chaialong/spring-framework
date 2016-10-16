@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="petStore" class="services.PetStoreServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+        <property name="itemDao" ref="itemDao"/>
+    </bean>
+    <bean id="clientService" class="services.ClientService" factory-method="createInstance">
+    </bean>
+    <bean id="serviceLocator" class="services.DefaultServiceLocator">
+    </bean>
+    <bean id="clientServiceInstance"
+          factory-bean="serviceLocator"
+          factory-method="createClientServiceInstance">
+    </bean>
+</beans>
