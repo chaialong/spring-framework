@@ -4,8 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="accountDao"
-          class="dao.JpaAccountDao">
+          class="spring.basic.dao.JpaAccountDao">
     </bean>
-    <bean id="itemDao" class="dao.JpaItemDao">
+    <bean id="itemDao" class="spring.basic.dao.JpaItemDao">
     </bean>
 </beans>

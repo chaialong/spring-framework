@@ -3,15 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="setterBasedDI" class="exercises.SetterBasedDI">
+    <bean id="setterBasedDI" class="spring.basic.exercises.SetterBasedDI">
         <property name="beanOne" ref="anotherBean"/>
         <property name="beanTwo" ref="yetAnotherBean"/>
         <property name="integerProperty" value="100"/>
     </bean>
-    <bean id="anotherBean" class="exercises.AnotherBean"/>
-    <bean id="yetAnotherBean" class="exercises.YetAnotherBean"/>
+    <bean id="anotherBean" class="spring.basic.exercises.AnotherBean"/>
+    <bean id="yetAnotherBean" class="spring.basic.exercises.YetAnotherBean"/>
 
-    <bean id="constructorBasedDI" class="exercises.ConstructorBasedDI">
+    <bean id="constructorBasedDI" class="spring.basic.exercises.ConstructorBasedDI">
         <constructor-arg ref="anotherBean"/>
         <constructor-arg ref="yetAnotherBean"/>
         <constructor-arg type="int" value="1"/>

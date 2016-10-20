@@ -1,4 +1,4 @@
-package services;
+package spring.basic.services;
 
 public class DefaultServiceLocator {
     private static ClientService clientService = new ClientService();

@@ -1,7 +1,7 @@
-package services;
+package spring.basic.services;
 
-import dao.JpaAccountDao;
-import dao.JpaItemDao;
+import spring.basic.dao.JpaAccountDao;
+import spring.basic.dao.JpaItemDao;
 
 public class PetStoreServiceImpl implements PetStoreService {
     private JpaAccountDao accountDao;

@@ -1,4 +1,4 @@
-package services;
+package spring.basic.services;
 
 public class ClientService {
     private static ClientService clientService = new ClientService();

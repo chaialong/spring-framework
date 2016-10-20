@@ -1,4 +1,4 @@
-package exercises;
+package spring.basic.exercises;
 
 public class SetterBasedDI {
     private AnotherBean beanOne;

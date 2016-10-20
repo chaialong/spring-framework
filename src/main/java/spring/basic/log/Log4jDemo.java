@@ -1,4 +1,4 @@
-package log;
+package spring.basic.log;
 
 import org.apache.log4j.Logger;
 

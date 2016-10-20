@@ -1,4 +1,4 @@
-package exercises;
+package spring.basic.exercises;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
